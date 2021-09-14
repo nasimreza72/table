@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: 1px solid lightgrey;
+            border-collapse: collapse;
+        }
+  
+        td {
+            border: 1px solid lightgrey;
+        }
+
+        td:nth-child(3){
+            padding-left: 7vw;
+        }
+
+        tbody td:nth-child(2){
+            padding-right: 7vw;
+        }
+
+        td:nth-child(1){
+            padding-right: 7vw;
+        }
+
+        td:last-child{;
+            text-align: right;
+        
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+
+        tfoot{
+            background-color: lightgrey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennnett</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi tannamuri</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riunti</td>
+                <td>Giovini Rovelli</td>
+                <td>45</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">=210</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
